@@ -1,0 +1,41 @@
+@mixin response($limit) {
+    @if $limit ==phone {
+        @media only screen and (max-width: 400px) {
+            @content
+        }
+
+        ;
+    }
+
+    @if $limit ==bigPhone {
+        @media only screen and (max-width: 539px) {
+            @content
+        }
+
+        ;
+    }
+
+    @if $limit ==tab-port {
+        @media only screen and (max-width: 600px) {
+            @content
+        }
+
+        ;
+    }
+
+    @if $limit ==tab-land {
+        @media only screen and (max-width: 900px) {
+            @content
+        }
+
+        ;
+    }
+
+    @if $limit ==big-desktop {
+        @media only screen and (min-width: 1200px) {
+            @content
+        }
+
+        ;
+    }
+}

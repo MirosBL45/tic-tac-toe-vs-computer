@@ -1,0 +1,62 @@
+%btn {
+    display: inline-block;
+    width: 13rem;
+    height: 3.125rem;
+    font-size: 1.25rem;
+    outline: none;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.313rem;
+    text-shadow: 1px 1px 1px #000;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+    font-family: 'DynaPuff', cursive;
+    transition: 0.27s;
+
+    &:hover {
+        transform: scale(0.98);
+    }
+
+    &:active {
+        font-weight: bold
+    }
+}
+
+#reload {
+    @extend %btn;
+    background: hsl(240, 70%, 61%);
+    display: none;
+}
+
+#rules {
+    @extend %btn;
+    background: hsl(195, 53%, 39%);
+    display: inline-block;
+}
+
+#closeModal,
+#closeModal2,
+#closeModal3,
+#closeModal4 {
+    height: 3.55rem;
+    width: 3.55rem;
+    color: hsl(0, 0%, 85%);
+    background-color: transparent;
+    border: 0;
+    font-size: 3rem;
+    font-weight: bold;
+    position: absolute;
+    right: 1.2rem;
+    top: 1.2rem;
+    cursor: pointer;
+
+    @media only screen and (max-height: 575.98px) and (orientation: landscape) {
+        height: 2.55rem;
+        width: 2.55rem;
+        font-size: 2rem;
+        right: 1rem;
+        top: 0.8rem;
+    }
+}

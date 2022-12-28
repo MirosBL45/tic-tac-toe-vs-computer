@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 75%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  font-family: "DynaPuff", cursive;
+  background: hsl(0deg, 0%, 70%);
+}
+
+h1 {
+  margin-top: 3rem;
+  font-size: 5rem;
+  text-align: center;
+  padding: 0 1rem;
+  letter-spacing: 0.5rem;
+}
+@media only screen and (max-height: 575.98px) and (orientation: landscape) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+hr {
+  width: 29rem;
+  height: 3px;
+  background: black;
+  margin-bottom: 2rem;
+}
+
+table {
+  border-collapse: collapse;
+  background: hsl(0deg, 0%, 50%);
+}
+
+table tr:first-child td {
+  border-top: 0;
+}
+
+table tr:last-child td {
+  border-bottom: 0;
+}
+
+table tr td:first-child {
+  border-left: 0;
+}
+
+table tr td:last-child {
+  border-right: 0;
+}
+
+.tile {
+  width: 8rem;
+  height: 8rem;
+  border: 0.388rem solid rgb(73, 23, 202);
+  text-align: center;
+  font-size: 6rem;
+  cursor: grab;
+}
+
+.rulesModal,
+.tieGame,
+.takenField,
+.gameOver {
+  text-shadow: none;
+  display: none;
+  background-color: hsl(0deg, 0%, 30%);
+  color: hsl(0deg, 0%, 85%);
+  box-shadow: rgba(255, 255, 255, 0.7) 0 0 1000px 1000px;
+  max-width: 40.62rem;
+  margin: auto;
+  padding: 3.12rem;
+  border-radius: 0.7rem;
+  position: absolute;
+  top: 25%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  letter-spacing: 0.2rem;
+}
+@media only screen and (max-height: 575.98px) and (orientation: landscape) {
+  .rulesModal,
+.tieGame,
+.takenField,
+.gameOver {
+    padding: 2.12rem;
+  }
+}
+.rulesModal h3,
+.tieGame h3,
+.takenField h3,
+.gameOver h3 {
+  margin: 3rem 0;
+  font-size: 2.7rem;
+}
+.rulesModal p,
+.tieGame p,
+.takenField p,
+.gameOver p {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+}
+@media only screen and (max-height: 575.98px) and (orientation: landscape) {
+  .rulesModal p,
+.tieGame p,
+.takenField p,
+.gameOver p {
+    margin: 1.5rem 0;
+  }
+}
+
+.divButtons {
+  margin: 1rem 0;
+}
+
+footer {
+  margin: auto 0 2rem;
+}
+footer .footerDescription {
+  padding: 1rem 0.5rem;
+  font-weight: bold;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 0.15rem;
+}
+footer .footerDescription a {
+  transition: 0.27s;
+  text-decoration: none;
+  color: hsl(195deg, 53%, 29%);
+}
+footer .footerDescription a:hover {
+  color: hsl(240deg, 70%, 51%);
+}
+
+#rules, #reload {
+  display: inline-block;
+  width: 13rem;
+  height: 3.125rem;
+  font-size: 1.25rem;
+  outline: none;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.313rem;
+  text-shadow: 1px 1px 1px #000;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  font-family: "DynaPuff", cursive;
+  transition: 0.27s;
+}
+#rules:hover, #reload:hover {
+  transform: scale(0.98);
+}
+#rules:active, #reload:active {
+  font-weight: bold;
+}
+
+#reload {
+  background: hsl(240deg, 70%, 61%);
+  display: none;
+}
+
+#rules {
+  background: hsl(195deg, 53%, 39%);
+  display: inline-block;
+}
+
+#closeModal,
+#closeModal2,
+#closeModal3,
+#closeModal4 {
+  height: 3.55rem;
+  width: 3.55rem;
+  color: hsl(0deg, 0%, 85%);
+  background-color: transparent;
+  border: 0;
+  font-size: 3rem;
+  font-weight: bold;
+  position: absolute;
+  right: 1.2rem;
+  top: 1.2rem;
+  cursor: pointer;
+}
+@media only screen and (max-height: 575.98px) and (orientation: landscape) {
+  #closeModal,
+#closeModal2,
+#closeModal3,
+#closeModal4 {
+    height: 2.55rem;
+    width: 2.55rem;
+    font-size: 2rem;
+    right: 1rem;
+    top: 0.8rem;
+  }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI Tic Tac Toe Game, the most favorite children's game">
+    <meta name="keywords" content="HTML, CSS, JavaScript, learning, AI Tic Tac Toe Game">
+    <meta name="author" content="Miroslav Jovic">
+    <meta name="robots" content="index, follow">
+    <meta content="AI Tic Tac Toe Game, the most favorite children's game" property="og:title">
+    <meta content="AI Tic Tac Toe Game, the most favorite children's game" property="og:description">
+    <meta content="AI Tic Tac Toe Game, the most favorite children's game" property="twitter:title">
+    <meta content="AI Tic Tac Toe Game, the most favorite children's game" property="twitter:description">
+    <meta property="og:site_name" content="AI Tic Tac Toe Game, the most favorite children's game">
+    <link rel="shortcut icon" href="img/logoMJ.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tic Tac Toe vs Computer</title>
+</head>
+<body>
+    <h1>Tic Tac Toe vs Computer</h1>
+    <hr>
+    <table id="table"></table>
+
+    <div class="divButtons">
+        <button id="reload" onclick="window.location.reload()">Play again!</button>
+        <button id="rules">Display rules</button>
+    </div>
+
+    <div class="rulesModal">
+        <button id="closeModal">X</button>        
+            <h3>Rules for the Tic Tac Toe</h3>
+            <p>The game is played on a grid that's 3 squares by 3 squares.</p>
+            <p>The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.</p>
+            <p>Good luck!!!</p>            
+    </div>
+
+    <div class="tieGame">
+        <button id="closeModal2">X</button>
+    </div>
+
+    <div class="gameOver">
+        <button id="closeModal3">X</button>        
+            <p>Game is over, start another one!</p>          
+    </div>
+
+    <div class="takenField">
+        <button id="closeModal4">X</button>        
+            <p>This field is taken, select a free one!</p>          
+    </div>
+
+    <footer>
+        <p class="footerDescription">
+            Copyright &copy; 2022 <a href="https://github.com/MirosBL45" target="_blank">Miroslav Jovic.</a> All rights reserved.        
+        </p>
+    </footer>
+
+    <script src="app/script.js"></script>
+</body>
+</html>
